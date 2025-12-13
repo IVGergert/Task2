@@ -1,12 +1,15 @@
 package gergert.task2.composite;
 
 public class CharacterLeaf implements  TextComponent{
-    private final char value;
-    private final TextType type;
+    private char value;
+    private TextType type;
 
     public CharacterLeaf(char value, TextType type) {
         this.value = value;
         this.type = type;
+    }
+
+    public CharacterLeaf(char c) {
     }
 
     @Override
