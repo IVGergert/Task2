@@ -27,5 +27,7 @@ public class SentenceToLexemeParser extends AbstractTextParser{
                 nextParser.parse(lexemeComposite, lexeme);
             }
         }
+
+        logger.info("Sentence parsing completed.");
     }
 }

@@ -41,5 +41,7 @@ public class LexemeToWordParser extends AbstractTextParser{
                 composite.add(new CharacterLeaf(punct.charAt(0)));
             }
         }
+
+        logger.info("Lexemes parsing completed.");
     }
 }

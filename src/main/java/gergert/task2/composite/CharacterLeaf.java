@@ -1,6 +1,6 @@
 package gergert.task2.composite;
 
-public class CharacterLeaf implements  TextComponent{
+public class CharacterLeaf implements TextComponent{
     private char value;
     private TextType type;
 

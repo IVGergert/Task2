@@ -27,6 +27,6 @@ public class ParagraphToSentenceParser extends AbstractTextParser{
             }
         }
 
-        logger.info("Sentence parsing completed.");
+        logger.info("Paragraphs parsing completed.");
     }
 }
