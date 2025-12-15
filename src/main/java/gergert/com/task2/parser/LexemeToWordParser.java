@@ -1,15 +1,15 @@
-package gergert.task2.parser;
+package gergert.com.task2.parser;
 
-import gergert.task2.composite.CharacterLeaf;
-import gergert.task2.composite.TextComposite;
-import gergert.task2.composite.TextType;
+import gergert.com.task2.composite.CharacterLeaf;
+import gergert.com.task2.composite.TextComposite;
+import gergert.com.task2.composite.TextType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class LexemeToWordParser extends AbstractTextParser{
+public class LexemeToWordParser extends AbstractTextParser {
     private static final Logger logger = LogManager.getLogger();
     private static final String WORD_REGEX = "([a-zA-Zа-яА-ЯёЁ]+)|(.)";
 

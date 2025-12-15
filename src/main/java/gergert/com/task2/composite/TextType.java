@@ -1,4 +1,4 @@
-package gergert.task2.composite;
+package gergert.com.task2.composite;
 
 public enum TextType {
     TEXT,

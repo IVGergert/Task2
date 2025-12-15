@@ -1,11 +1,11 @@
-package gergert.task2.parser;
+package gergert.com.task2.parser;
 
-import gergert.task2.composite.TextComposite;
-import gergert.task2.composite.TextType;
+import gergert.com.task2.composite.TextComposite;
+import gergert.com.task2.composite.TextType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class TextToParagraphParser extends AbstractTextParser{
+public class TextToParagraphParser extends AbstractTextParser {
     private static final Logger logger = LogManager.getLogger();
     private static final String PARAGRAPH_REGEX_SPLIT = "[\\n]";
 

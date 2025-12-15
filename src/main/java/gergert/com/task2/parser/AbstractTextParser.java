@@ -1,6 +1,6 @@
-package gergert.task2.parser;
+package gergert.com.task2.parser;
 
-import gergert.task2.composite.TextComposite;
+import gergert.com.task2.composite.TextComposite;
 
 public abstract class AbstractTextParser {
     protected AbstractTextParser nextParser;

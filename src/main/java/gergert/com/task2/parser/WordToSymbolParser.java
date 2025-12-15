@@ -1,11 +1,11 @@
-package gergert.task2.parser;
+package gergert.com.task2.parser;
 
-import gergert.task2.composite.CharacterLeaf;
-import gergert.task2.composite.TextComposite;
+import gergert.com.task2.composite.CharacterLeaf;
+import gergert.com.task2.composite.TextComposite;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class WordToSymbolParser extends AbstractTextParser{
+public class WordToSymbolParser extends AbstractTextParser {
     private static final Logger logger = LogManager.getLogger();
 
     public WordToSymbolParser() {}

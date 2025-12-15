@@ -1,11 +1,11 @@
-package gergert.task2.parser;
+package gergert.com.task2.parser;
 
-import gergert.task2.composite.TextComposite;
-import gergert.task2.composite.TextType;
+import gergert.com.task2.composite.TextComposite;
+import gergert.com.task2.composite.TextType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class ParagraphToSentenceParser extends AbstractTextParser{
+public class ParagraphToSentenceParser extends AbstractTextParser {
     private static final Logger logger = LogManager.getLogger();
     private static final String SENTENCE_REGEX_SPLIT = "(?<=[.!?])[\\s\\n]+";
 

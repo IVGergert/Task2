@@ -1,6 +1,5 @@
-package gergert.task2.composite;
+package gergert.com.task2.composite;
 
-import java.net.Proxy;
 import java.util.ArrayList;
 import java.util.List;
 
