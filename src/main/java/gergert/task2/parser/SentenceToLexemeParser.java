@@ -9,6 +9,8 @@ public class SentenceToLexemeParser extends AbstractTextParser{
     private static final Logger logger = LogManager.getLogger();
     private static final String LEXEME_REGEX_SPLIT = "\\s+";
 
+    public SentenceToLexemeParser() {}
+
     @Override
     public void parse(TextComposite composite, String text) {
         logger.trace("Parsing sentence: [{}]", text);

@@ -13,6 +13,8 @@ public class LexemeToWordParser extends AbstractTextParser{
     private static final Logger logger = LogManager.getLogger();
     private static final String WORD_REGEX = "([a-zA-Zа-яА-ЯёЁ]+)|(.)";
 
+    public LexemeToWordParser() {}
+
     @Override
     public void parse(TextComposite composite, String text) {
         logger.trace("Parsing lexeme: [{}]", text);

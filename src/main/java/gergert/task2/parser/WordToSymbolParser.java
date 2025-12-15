@@ -8,6 +8,8 @@ import org.apache.logging.log4j.Logger;
 public class WordToSymbolParser extends AbstractTextParser{
     private static final Logger logger = LogManager.getLogger();
 
+    public WordToSymbolParser() {}
+
     @Override
     public void parse(TextComposite composite, String text) {
         logger.info("Start parsing words into symbols");

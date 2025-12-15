@@ -9,6 +9,8 @@ public class TextToParagraphParser extends AbstractTextParser{
     private static final Logger logger = LogManager.getLogger();
     private static final String PARAGRAPH_REGEX_SPLIT = "[\\n]";
 
+    public TextToParagraphParser() {}
+
     @Override
     public void parse(TextComposite composite, String text) {
         if (text == null || text.isBlank()){

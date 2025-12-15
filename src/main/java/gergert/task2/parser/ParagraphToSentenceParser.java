@@ -9,6 +9,8 @@ public class ParagraphToSentenceParser extends AbstractTextParser{
     private static final Logger logger = LogManager.getLogger();
     private static final String SENTENCE_REGEX_SPLIT = "(?<=[.!?])[\\s\\n]+";
 
+    public ParagraphToSentenceParser() {}
+
     @Override
     public void parse(TextComposite composite, String text) {
         logger.trace("Parsing paragraph: [{}]", text);
