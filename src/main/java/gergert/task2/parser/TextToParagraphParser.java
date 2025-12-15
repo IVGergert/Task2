@@ -5,14 +5,14 @@ import gergert.task2.composite.TextType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class ParagraphParser extends AbstractTextParser{
+public class TextToParagraphParser extends AbstractTextParser{
     private static final Logger logger = LogManager.getLogger();
-    private static final String PARAGRAPH_REGEX_SPLIT = "\\n";
+    private static final String PARAGRAPH_REGEX_SPLIT = "[\\n]";
 
     @Override
     public void parse(TextComposite composite, String text) {
         if (text == null || text.isBlank()){
-            logger.warn("Text is null or empty");
+            logger.warn("Text is null or empty - nothing to parse");
             return;
         }
 
@@ -20,16 +20,14 @@ public class ParagraphParser extends AbstractTextParser{
         String[] paragraphs = text.split(PARAGRAPH_REGEX_SPLIT);
         logger.debug("Found {} paragraphs in text.", paragraphs.length);
 
-        for (String paragraphStr : paragraphs) {
-            if (!paragraphStr.trim().isEmpty()) {
+        for (String paragraph : paragraphs) {
+            if (!paragraph.trim().isEmpty()) {
                 TextComposite paragraphComposite = new TextComposite(TextType.PARAGRAPH);
                 composite.add(paragraphComposite);
 
                 if (nextParser != null) {
-                    nextParser.parse(paragraphComposite, paragraphStr);
+                    nextParser.parse(paragraphComposite, paragraph.trim());
                 }
-            } else {
-                logger.trace("Skipped empty paragraph line.");
             }
         }
 

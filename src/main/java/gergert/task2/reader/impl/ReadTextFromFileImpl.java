@@ -25,7 +25,7 @@ public class ReadTextFromFileImpl implements ReadTextFromFile {
             return lines;
         } catch (IOException e) {
             logger.error("Error reading file {}", path, e);
-            throw new RuntimeException(e);
+            return List.of();
         }
     }
 }

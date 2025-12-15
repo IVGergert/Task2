@@ -5,15 +5,19 @@ import gergert.task2.composite.TextComposite;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class SymbolParser extends AbstractTextParser{
+public class WordToSymbolParser extends AbstractTextParser{
     private static final Logger logger = LogManager.getLogger();
 
     @Override
     public void parse(TextComposite composite, String text) {
+        logger.info("Start parsing words into symbols");
+
         char[] chars = text.toCharArray();
 
-        for (char c : chars) {
-            composite.add(new CharacterLeaf(c));
+        for (char symbols : chars) {
+            composite.add(new CharacterLeaf(symbols));
         }
+
+        logger.info("Words parsing completed.");
     }
 }

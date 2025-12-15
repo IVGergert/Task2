@@ -10,6 +10,8 @@ public class CharacterLeaf implements  TextComponent{
     }
 
     public CharacterLeaf(char c) {
+        this.value = c;
+        this.type = TextType.SYMBOL;
     }
 
     @Override

@@ -5,7 +5,7 @@ import gergert.task2.composite.TextType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class LexemeParser extends AbstractTextParser{
+public class SentenceToLexemeParser extends AbstractTextParser{
     private static final Logger logger = LogManager.getLogger();
     private static final String LEXEME_REGEX_SPLIT = "\\s+";
 
@@ -13,7 +13,7 @@ public class LexemeParser extends AbstractTextParser{
     public void parse(TextComposite composite, String text) {
         logger.trace("Parsing sentence: [{}]", text);
 
-        String[] lexemes = text.split(LEXEME_REGEX_SPLIT);
+        String[] lexemes = text.trim().split(LEXEME_REGEX_SPLIT);
 
         logger.debug("Sentence split into {} lexemes.", lexemes.length);
 
