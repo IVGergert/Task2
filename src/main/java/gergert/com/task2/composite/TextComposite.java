@@ -7,6 +7,9 @@ public class TextComposite implements TextComponent {
     private final List<TextComponent> components = new ArrayList<>();
     private final TextType type;
 
+    private static final String DOUBLESPACE = "\n\n";
+    private static final String SPACE = " ";
+
     public TextComposite(TextType type) {
         this.type = type;
     }
@@ -34,19 +37,19 @@ public class TextComposite implements TextComponent {
                 case TEXT -> {
                     if (component instanceof TextComposite &&
                             ((TextComposite) component).getType() == TextType.PARAGRAPH){
-                        text.append("\n\n");
+                        text.append(DOUBLESPACE);
                     }
                 }
                 case PARAGRAPH -> {
                     if (component instanceof TextComposite &&
                             ((TextComposite) component).getType() == TextType.SENTENCE){
-                        text.append("\n\n");
+                        text.append(DOUBLESPACE);
                     }
                 }
                 case SENTENCE -> {
                     if (component instanceof TextComposite &&
                             ((TextComposite) component).getType() == TextType.LEXEME){
-                        text.append(" ");
+                        text.append(SPACE);
                     }
                 }
             }

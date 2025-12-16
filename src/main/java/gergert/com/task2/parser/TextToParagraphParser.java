@@ -23,7 +23,7 @@ public class TextToParagraphParser extends AbstractTextParser {
         logger.debug("Found {} paragraphs in text.", paragraphs.length);
 
         for (String paragraph : paragraphs) {
-            if (!paragraph.trim().isEmpty()) {
+            if (!paragraph.isBlank()) {
                 TextComposite paragraphComposite = new TextComposite(TextType.PARAGRAPH);
                 composite.add(paragraphComposite);
 
