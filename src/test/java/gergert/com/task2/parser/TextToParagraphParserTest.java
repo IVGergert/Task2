@@ -1,8 +1,7 @@
-package gergert.task2.parser;
+package gergert.com.task2.parser;
 
 import gergert.com.task2.composite.TextComposite;
 import gergert.com.task2.composite.TextType;
-import gergert.com.task2.parser.TextToParagraphParser;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

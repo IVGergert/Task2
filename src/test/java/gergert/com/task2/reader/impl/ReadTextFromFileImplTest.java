@@ -1,6 +1,5 @@
-package gergert.task2.reader.impl;
+package gergert.com.task2.reader.impl;
 
-import gergert.com.task2.reader.impl.ReadTextFromFileImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
@@ -10,7 +9,7 @@ import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ReadTextFromFileImplTest {
 

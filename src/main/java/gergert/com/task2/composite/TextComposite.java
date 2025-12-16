@@ -7,8 +7,9 @@ public class TextComposite implements TextComponent {
     private final List<TextComponent> components = new ArrayList<>();
     private final TextType type;
 
-    private static final String DOUBLESPACE = "\n\n";
-    private static final String SPACE = " ";
+    private static final String FIRST_PARAGRAPH_DELIMITER = "\t";
+    private static final String NEXT_PARAGRAPH_DELIMITER = "\n\n\t";
+    private static final String SPACE_DELIMITER = " ";
 
     public TextComposite(TextType type) {
         this.type = type;
@@ -30,33 +31,30 @@ public class TextComposite implements TextComponent {
     public String toString(){
         StringBuilder text = new StringBuilder();
 
-        for (TextComponent component : components) {
-            text.append(component.toString());
+        boolean isFirst = true;
 
+        for (TextComponent component : components) {
             switch (type){
                 case TEXT -> {
                     if (component instanceof TextComposite &&
                             ((TextComposite) component).getType() == TextType.PARAGRAPH){
-                        text.append(DOUBLESPACE);
+
+                        if (isFirst) {
+                            text.append(FIRST_PARAGRAPH_DELIMITER);
+                        } else {
+                            text.append(NEXT_PARAGRAPH_DELIMITER);
+                        }
                     }
                 }
-                case PARAGRAPH -> {
-                    if (component instanceof TextComposite &&
-                            ((TextComposite) component).getType() == TextType.SENTENCE){
-                        text.append(DOUBLESPACE);
-                    }
-                }
-                case SENTENCE -> {
-                    if (component instanceof TextComposite &&
-                            ((TextComposite) component).getType() == TextType.LEXEME){
-                        text.append(SPACE);
+                case PARAGRAPH, SENTENCE -> {
+                    if (!isFirst) {
+                        text.append(SPACE_DELIMITER);
                     }
                 }
             }
-        }
 
-        if (text.length() > 0 && text.charAt(text.length() - 1) == ' '){
-            text.deleteCharAt(text.length() - 1);
+            text.append(component.toString());
+            isFirst = false;
         }
 
         return text.toString();

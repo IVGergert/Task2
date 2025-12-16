@@ -1,11 +1,10 @@
-package gergert.task2.parser;
+package gergert.com.task2.parser;
 
 import gergert.com.task2.composite.TextComposite;
 import gergert.com.task2.composite.TextType;
-import gergert.com.task2.parser.LexemeToWordParser;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class LexemeToWordParserTest {
 
