@@ -24,7 +24,7 @@ public class SentenceToLexemeParser extends AbstractTextParser {
             composite.add(lexemeComposite);
 
             if (nextParser != null) {
-                nextParser.parse(lexemeComposite, lexeme);
+                nextParser.parse(lexemeComposite, lexeme.strip());
             }
         }
 

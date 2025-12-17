@@ -23,7 +23,7 @@ public class ParagraphToSentenceParser extends AbstractTextParser {
             composite.add(sentenceComposite);
 
             if (nextParser != null) {
-                nextParser.parse(sentenceComposite, sentence.trim());
+                nextParser.parse(sentenceComposite, sentence.strip());
             }
         }
 

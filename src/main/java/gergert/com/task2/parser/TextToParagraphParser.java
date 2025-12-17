@@ -28,7 +28,7 @@ public class TextToParagraphParser extends AbstractTextParser {
                 composite.add(paragraphComposite);
 
                 if (nextParser != null) {
-                    nextParser.parse(paragraphComposite, paragraph.trim());
+                    nextParser.parse(paragraphComposite, paragraph.strip());
                 }
             }
         }
