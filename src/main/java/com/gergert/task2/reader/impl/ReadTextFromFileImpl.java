@@ -1,6 +1,6 @@
-package gergert.com.task2.reader.impl;
+package com.gergert.task2.reader.impl;
 
-import gergert.com.task2.reader.ReadTextFromFile;
+import com.gergert.task2.reader.ReadTextFromFile;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

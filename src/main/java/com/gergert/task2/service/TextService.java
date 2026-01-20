@@ -1,6 +1,6 @@
-package gergert.com.task2.service;
+package com.gergert.task2.service;
 
-import gergert.com.task2.composite.TextComposite;
+import com.gergert.task2.composite.TextComposite;
 
 import java.util.List;
 

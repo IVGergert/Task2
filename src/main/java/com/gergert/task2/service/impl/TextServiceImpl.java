@@ -1,9 +1,9 @@
-package gergert.com.task2.service.impl;
+package com.gergert.task2.service.impl;
 
-import gergert.com.task2.composite.TextComponent;
-import gergert.com.task2.composite.TextComposite;
-import gergert.com.task2.composite.TextType;
-import gergert.com.task2.service.TextService;
+import com.gergert.task2.composite.TextComponent;
+import com.gergert.task2.composite.TextComposite;
+import com.gergert.task2.composite.TextType;
+import com.gergert.task2.service.TextService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -1,5 +1,6 @@
 package gergert.com.task2.reader.impl;
 
+import com.gergert.task2.reader.impl.ReadTextFromFileImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 

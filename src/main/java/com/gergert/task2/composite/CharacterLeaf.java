@@ -1,4 +1,4 @@
-package gergert.com.task2.composite;
+package com.gergert.task2.composite;
 
 public class CharacterLeaf implements TextComponent {
     private char value;

@@ -1,7 +1,7 @@
-package gergert.com.task2.parser;
+package com.gergert.task2.parser;
 
-import gergert.com.task2.composite.TextComposite;
-import gergert.com.task2.composite.TextType;
+import com.gergert.task2.composite.TextComposite;
+import com.gergert.task2.composite.TextType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

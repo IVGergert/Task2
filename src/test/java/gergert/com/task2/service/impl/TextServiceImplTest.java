@@ -1,8 +1,9 @@
 package gergert.com.task2.service.impl;
 
-import gergert.com.task2.composite.TextComposite;
-import gergert.com.task2.composite.TextType;
-import gergert.com.task2.parser.*;
+import com.gergert.task2.composite.TextComposite;
+import com.gergert.task2.composite.TextType;
+import com.gergert.task2.parser.*;
+import com.gergert.task2.service.impl.TextServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

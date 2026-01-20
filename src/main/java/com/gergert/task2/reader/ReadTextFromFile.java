@@ -1,4 +1,4 @@
-package gergert.com.task2.reader;
+package com.gergert.task2.reader;
 
 import java.util.List;
 

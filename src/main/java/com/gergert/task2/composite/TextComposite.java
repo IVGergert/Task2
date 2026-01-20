@@ -1,4 +1,4 @@
-package gergert.com.task2.composite;
+package com.gergert.task2.composite;
 
 import java.util.ArrayList;
 import java.util.List;
